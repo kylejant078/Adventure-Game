@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D462BA38-6813-40D6-B9E0-074F462A7EDB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Adventure_Game</RootNamespace>
+    <AssemblyName>Adventure Game</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdventureGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdventureGame.Designer.cs">
+      <DependentUpon>AdventureGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdventureGame.resx">
+      <DependentUpon>AdventureGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amazing race logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\videogame sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amazing race sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crashsound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entrancesound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planesound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playsound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bellsound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bitesound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suspensesound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swansound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\golfsound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\losesound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\runsound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carsound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\birdsound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forgotcluesound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amazing race end.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stratford.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\festival theatre.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swans.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\water tower.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\golf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\path.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shortcut.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cityhall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clue.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\race.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\race end.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
